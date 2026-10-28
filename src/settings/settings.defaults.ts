@@ -48,6 +48,8 @@ export const SITE_DEFAULTS = {
     hours: 'Monday–Friday, 8:00–17:00 CT',
     coordinates: '29.7410° N / 95.4830° W',
     serviceArea: 'Houston, the Gulf Coast, and field support beyond.',
+    whatsapp: '17133471466',
+    whatsappMessage: 'Hi Vomtek — I would like to talk about a control panel or field service project.',
   },
   socials: {
     linkedin: '',
@@ -174,6 +176,8 @@ export const SITE_DEFAULTS = {
   },
   features: {
     foundation: true,
+    whatsapp: true,
+    consult: true,
     careers: true,
     automotive: true,
     facilities: true,
