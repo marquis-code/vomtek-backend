@@ -1,0 +1,445 @@
+{
+  "articles": [
+    {
+      "slug": "five-questions-before-you-specify-a-control-panel",
+      "title": "Five questions to answer before you specify a control panel",
+      "excerpt": "Most panel change orders trace back to decisions that were never made — not mistakes that were made. Answer these five before the first drawing is issued.",
+      "category": "Engineering",
+      "readingTime": 6,
+      "publishedAt": "2026-09-18",
+      "author": "Vomtek Engineering",
+      "tone": "ink",
+      "tags": ["Panel design", "RFQ", "Project planning"],
+      "body": [
+        {
+          "type": "p",
+          "text": "A control panel is a compressed version of a process: every load, every sequence, every safety decision ends up inside one enclosure. When a project goes sideways, the cause is usually not a wiring error. It is a question nobody asked before the drawing was released."
+        },
+        {
+          "type": "p",
+          "text": "These are the five questions we work through with clients before we issue a schematic. They cost an hour. They routinely save weeks."
+        },
+        { "type": "h2", "text": "1. What is the panel actually protecting?" },
+        {
+          "type": "p",
+          "text": "An overload relay is not a safety device. A disconnect is not a motor starter. A safety circuit is not a convenience stop. Teams often list components before agreeing on what each one is for, which produces panels with redundant protection in one place and none where it matters. Start with the hazard: what can injure a person, what can destroy the equipment, and what can quietly ruin product."
+        },
+        { "type": "h2", "text": "2. Who has to maintain this in five years?" },
+        {
+          "type": "p",
+          "text": "The person who troubleshoots this panel will probably not be in the room during design. They will have a multimeter, a drawing, and limited patience. Layout, labeling, and wire numbering are not cosmetic. They determine whether a two-hour fault becomes a two-shift outage."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Leave service access to every device that can fail, not just the ones that are easy to place.",
+            "Label both ends of every conductor and keep the wire schedule in the door pocket.",
+            "Bring terminations to an accessible height; nobody wants to troubleshoot on their knees."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "The test of a panel is not how it looks on delivery day. It is how long it takes a maintenance tech to find a failed input at 2 a.m."
+        },
+        { "type": "h2", "text": "3. What is the real environment?" },
+        {
+          "type": "p",
+          "text": "NEMA 4X is not a synonym for 'outdoor'. Washdown areas, corrosive atmospheres, ambient heat, vibration, and altitude all change enclosure selection, gasket material, enclosure cooling, and even conductor insulation. Tell your builder where the panel will stand and what will be sprayed on it — not just the room name."
+        },
+        { "type": "h2", "text": "4. What does the shutdown calendar look like?" },
+        {
+          "type": "p",
+          "text": "A panel that arrives three days late is an inconvenience. A panel that arrives after the only available outage is a six-month delay. Share the shutdown window at the start. It affects component lead times, whether the build is staged, and whether the FAT should be split into sections."
+        },
+        { "type": "h2", "text": "5. What evidence do you need at handover?" },
+        {
+          "type": "p",
+          "text": "Ask for the documentation package before you place the order, not after. At minimum: approved schematics, as-built drawings, a wire schedule, a bill of materials with manufacturer part numbers, a FAT report, and a spare-parts list. If the package is an afterthought, it will look like one."
+        },
+        {
+          "type": "p",
+          "text": "None of this requires a bigger budget. It requires a better first conversation. If you are about to specify a panel and cannot answer one of these, that is the right place to start."
+        }
+      ]
+    },
+    {
+      "slug": "what-your-failed-motor-is-telling-you",
+      "title": "What your failed motor is telling you",
+      "excerpt": "A rewind fixes the winding. It does not fix the reason the winding failed. Here is how to read the evidence before the motor goes in the oven.",
+      "category": "Maintenance",
+      "readingTime": 7,
+      "publishedAt": "2026-08-27",
+      "author": "Vomtek Service",
+      "tone": "signal",
+      "tags": ["Motors", "Reliability", "Diagnostics"],
+      "body": [
+        {
+          "type": "p",
+          "text": "When a motor arrives at the shop, the useful information is in the failure pattern, not the repair order. A burned winding is an outcome. The cause is usually visible if someone looks before the evidence is stripped."
+        },
+        { "type": "h2", "text": "Read the failure before you rewind" },
+        {
+          "type": "p",
+          "text": "A single-phase burn typically shows one phase overheated while the other two are relatively clean — often a lost phase, a blown fuse, or a contactor that did not close. A uniformly cooked winding points toward overload, blocked cooling, or repeated starts. A localized turn-to-turn failure can indicate voltage spikes from a drive, moisture, or a manufacturing defect. Each of these leads to a different corrective action."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Lost phase: check the starter, fuses, and supply before the motor returns to service.",
+            "Overload: verify the driven load, belt tension, and overload setting — a new winding will fail the same way.",
+            "Drive-related: confirm cable length, grounding, and dv/dt filtering; consider an inverter-duty winding.",
+            "Moisture: inspect the environment, seals, and space heaters, especially on standby equipment."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Rewinding a motor without correcting the cause is a scheduled repeat visit."
+        },
+        { "type": "h2", "text": "Test data should tell a story" },
+        {
+          "type": "p",
+          "text": "Ask for incoming test results, not just a pass/fail at the end. Insulation resistance, polarization index, winding resistance balance, and surge comparison before disassembly establish a baseline and identify the failure mode. After the rewind, the same tests should demonstrate the repair. If the numbers are missing, the diagnosis is probably a guess."
+        },
+        { "type": "h2", "text": "When replacement is the better answer" },
+        {
+          "type": "p",
+          "text": "Rewinding makes the most sense when the frame, shaft, and mounting are unusual, when lead times for a new motor are long, or when the motor is part of a matched system. Replacement wins when efficiency is far below modern standards, when the mechanical condition is poor, or when a spare is readily available. A good shop will tell you which case you are in."
+        },
+        {
+          "type": "p",
+          "text": "The cheapest motor repair is the one that also removes the cause. Everything else is a delay."
+        }
+      ]
+    },
+    {
+      "slug": "ul-508a-nfpa-70-iec-61439-a-buyers-map",
+      "title": "UL 508A, NFPA 70, IEC 61439: a buyer's map",
+      "excerpt": "Three standards, three different jobs. What each one actually governs — and which questions to ask your panel shop before you compare quotes.",
+      "category": "Standards",
+      "readingTime": 8,
+      "publishedAt": "2026-07-22",
+      "author": "Vomtek Engineering",
+      "tone": "bone",
+      "tags": ["UL 508A", "NFPA 70", "IEC 61439", "Compliance"],
+      "body": [
+        {
+          "type": "p",
+          "text": "Standards come up in almost every panel conversation, and they are often used loosely. A quote that says 'built to code' does not tell you much. Here is the practical difference between the three references you will hear most often."
+        },
+        { "type": "h2", "text": "UL 508A: the panel, as an assembly" },
+        {
+          "type": "p",
+          "text": "UL 508A is the standard for industrial control panels in the United States. It governs how the panel is constructed and marked: enclosure and component ratings, short-circuit current ratings, conductor sizing, spacing, and the industrial control panel label. A UL 508A certified shop has been audited for the procedures behind that label."
+        },
+        {
+          "type": "p",
+          "text": "Ask your builder: are you a UL 508A panel shop, and will this panel carry the label? If the answer is a version of 'we build to UL standards', ask for the specific mark and the short-circuit current rating documentation."
+        },
+        { "type": "h2", "text": "NFPA 70: the installation" },
+        {
+          "type": "p",
+          "text": "The National Electrical Code governs the installation in the building: service and feeder sizing, overcurrent protection, grounding and bonding, wiring methods, and working clearances. A panel can be perfectly constructed and still be installed incorrectly. That is why the scope should say who is responsible for the installation and the inspection."
+        },
+        { "type": "h2", "text": "IEC 61439: the international reference" },
+        {
+          "type": "p",
+          "text": "For equipment destined outside the United States, IEC 61439 is the relevant assembly standard. It uses a different verification approach — design verification plus routine verification — and different terminology around ratings and forms of separation. A US shop can build to it, but the drawings and nameplate need to reflect the target market from the beginning, not be converted at the end."
+        },
+        {
+          "type": "quote",
+          "text": "The standard is not a sticker. It is the set of decisions that determines whether the sticker is true."
+        },
+        { "type": "h2", "text": "Three questions worth asking" },
+        {
+          "type": "list",
+          "items": [
+            "What certification will this panel carry, and who signs the label?",
+            "What is the short-circuit current rating, and what upstream protection is assumed?",
+            "Which installation standard applies on site, and whose scope covers inspection?"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A builder who can answer these clearly is usually a builder who has thought about the rest of the job too."
+        }
+      ]
+    },
+    {
+      "slug": "planning-a-live-mcc-retrofit",
+      "title": "Planning a live MCC retrofit without stopping production",
+      "excerpt": "Staged changeovers, temporary power, and the sequence that keeps the plant running while the old lineup comes out.",
+      "category": "Field service",
+      "readingTime": 9,
+      "publishedAt": "2026-06-09",
+      "author": "Vomtek Field Service",
+      "tone": "ink",
+      "tags": ["Retrofit", "MCC", "Outage planning"],
+      "body": [
+        {
+          "type": "p",
+          "text": "Replacing a motor control center is not a panel project. It is a production-scheduling project that happens to involve electrical work. The plants that get it right treat the changeover sequence as the primary deliverable and the equipment as the thing that supports it."
+        },
+        { "type": "h2", "text": "Start with the load list, not the enclosure" },
+        {
+          "type": "p",
+          "text": "Every bucket needs a destination. Before the first drawing, document each motor: horsepower, voltage, full-load amps, starter type, control source, interlock, and whether it can be shut down individually. Loads that can be moved to a temporary starter or an existing spare bucket give you degrees of freedom during the changeover. Loads that cannot will define the outage."
+        },
+        { "type": "h2", "text": "Design for a staged cutover" },
+        {
+          "type": "p",
+          "text": "A single-shot replacement requires every circuit to be down at once. A staged approach splits the lineup into sections that can be cut over independently — typically feeding new sections from the existing bus, then transferring loads in planned blocks. It costs more design time and less production time, which is usually the right trade."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Build and FAT the new sections while the old lineup remains in service.",
+            "Pre-pull feeders and control wiring to the new section to shorten the cutover window.",
+            "Label and ring out every conductor before the outage, not during it.",
+            "Keep a documented fallback to the old lineup until the new section is proven."
+          ]
+        },
+        { "type": "h2", "text": "Plan temporary power honestly" },
+        {
+          "type": "p",
+          "text": "Generators, rental switchgear, and temporary feeders are often an afterthought in the estimate and the critical path in execution. Size temporary power for starting loads, not just running loads, and confirm the utility interface and grounding approach in advance. If the temporary solution is not reliable, it is not a plan."
+        },
+        {
+          "type": "quote",
+          "text": "The measure of a good changeover is not how fast it was. It is how few surprises were left for the night shift."
+        },
+        { "type": "h2", "text": "Test the sequence, not just the equipment" },
+        {
+          "type": "p",
+          "text": "Factory acceptance testing proves the panels work. A changeover dry run proves the plan works. Walk the sequence with operations, maintenance, and the field crew: who opens which breaker, who confirms which motor, who signs off before the next block moves. The hour spent on the dry run is the cheapest hour in the project."
+        },
+        {
+          "type": "p",
+          "text": "When the plan is right, the new MCC is almost invisible. The plant notices a shorter outage, not a construction project."
+        }
+      ]
+    },
+    {
+      "slug": "your-panel-documentation-is-an-asset",
+      "title": "Your panel documentation is an asset. Treat it like one.",
+      "excerpt": "The drawing package is what makes equipment maintainable, insurable, and sellable. Most plants find out too late.",
+      "category": "Operations",
+      "readingTime": 5,
+      "publishedAt": "2026-05-14",
+      "author": "Vomtek Engineering",
+      "tone": "bone",
+      "tags": ["Documentation", "Maintenance", "Asset management"],
+      "body": [
+        {
+          "type": "p",
+          "text": "Every plant has one: a cabinet with a panel inside and a folder that does not match it. The drawings were accurate when the machine was installed, then a field change, a replacement drive, and a bypassed interlock turned the folder into fiction."
+        },
+        { "type": "h2", "text": "Documentation is a maintenance tool" },
+        {
+          "type": "p",
+          "text": "When an input fails at 2 a.m., the drawing is what turns a hunt into a repair. When a drive is obsolete, the as-built is what lets an engineer specify a replacement without reverse-engineering the whole cabinet. When a line is sold or audited, the documentation package is part of what changes hands."
+        },
+        { "type": "h2", "text": "The minimum viable package" },
+        {
+          "type": "list",
+          "items": [
+            "As-built schematics dated and revision-controlled",
+            "Wire schedule with conductor numbers and terminations",
+            "Bill of materials with manufacturer and part number",
+            "Panel layout with device identification",
+            "FAT report and any field-change records",
+            "Spare-parts list with recommended stocking levels"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "If the drawing does not match the panel, the drawing is not documentation. It is decoration."
+        },
+        { "type": "h2", "text": "Make change control routine" },
+        {
+          "type": "p",
+          "text": "The package stays true only if every field change updates it. A simple rule works: no modification is complete until the redline is captured, the drawing is revised, and the new revision is placed in the panel pocket and the maintenance system. The cost is minutes. The alternative is a crew troubleshooting a circuit that no longer exists."
+        },
+        {
+          "type": "p",
+          "text": "When we hand over a panel, the documentation is part of the product. It should be part of the purchase decision too."
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "slug": "controls-engineer",
+      "title": "Controls Engineer",
+      "division": "Instrumentation",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "level": "Mid–Senior",
+      "summary": "Design control panels and integration packages for water, energy, and manufacturing clients — from sequence of operation to commissioning.",
+      "responsibilities": [
+        "Develop schematics, panel layouts, and I/O lists from process requirements",
+        "Program PLCs and HMIs and integrate VFDs, instrumentation, and networks",
+        "Support factory acceptance testing and field commissioning",
+        "Produce and maintain as-built documentation and spare-parts lists",
+        "Work directly with clients to resolve scope and technical questions"
+      ],
+      "requirements": [
+        "3+ years designing industrial control systems",
+        "Working knowledge of PLC platforms and HMI development",
+        "Ability to read and produce electrical schematics",
+        "Comfort with on-site commissioning and customer communication"
+      ],
+      "niceToHave": [
+        "Experience with water/wastewater or process skids",
+        "AutoCAD Electrical or EPLAN proficiency",
+        "SCADA, historian, or network integration experience"
+      ],
+      "postedAt": "2026-10-02",
+      "active": true
+    },
+    {
+      "slug": "panel-builder",
+      "title": "Panel Builder / Wire Technician",
+      "division": "Instrumentation",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "level": "Experienced",
+      "summary": "Lay out and wire UL 508A control panels to drawing, with the craftsmanship and documentation discipline our clients depend on.",
+      "responsibilities": [
+        "Mount components and build DIN rail layouts to panel drawings",
+        "Route, terminate, label, and torque conductors to schedule",
+        "Perform point-to-point checks and support factory acceptance testing",
+        "Maintain build records and photo documentation",
+        "Keep the bench and shop organized and inspection-ready"
+      ],
+      "requirements": [
+        "2+ years wiring industrial control panels",
+        "Ability to read electrical schematics and wire schedules",
+        "Neat, consistent workmanship and reliable attendance",
+        "Understanding of electrical safety practices"
+      ],
+      "niceToHave": [
+        "UL 508A shop experience",
+        "Familiarity with VFDs, soft starters, and PLC hardware",
+        "Experience with instrumentation and loop wiring"
+      ],
+      "postedAt": "2026-09-26",
+      "active": true
+    },
+    {
+      "slug": "pcb-design-engineer",
+      "title": "PCB Design Engineer",
+      "division": "Electrical",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "level": "Mid-level",
+      "summary": "Own board design from schematic to fabrication package for industrial control and instrumentation products.",
+      "responsibilities": [
+        "Capture schematics and lay out multi-layer boards in Altium or Allegro",
+        "Run DFM/DFA reviews with fabrication and assembly partners",
+        "Define stack-ups, impedance, and thermal copper strategy",
+        "Produce Gerbers, BOMs, assembly drawings, and fabrication notes",
+        "Support prototype bring-up, test, and design revisions"
+      ],
+      "requirements": [
+        "3+ years of PCB design experience",
+        "Strong schematic capture and layout fundamentals",
+        "Experience with power, grounding, and EMI-sensitive layouts",
+        "Ability to document and hand off a complete fabrication package"
+      ],
+      "niceToHave": [
+        "Allegro and Altium experience in the same role",
+        "Flex or rigid-flex design experience",
+        "Embedded firmware or test development exposure"
+      ],
+      "postedAt": "2026-09-11",
+      "active": true
+    },
+    {
+      "slug": "field-service-technician",
+      "title": "Field Service Technician",
+      "division": "Electrical",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "level": "Experienced",
+      "summary": "Commission, troubleshoot, and maintain control and electrical systems at customer sites across the Houston region.",
+      "responsibilities": [
+        "Install and commission panels, drives, and electrical equipment",
+        "Perform loop checks, point-to-point verification, and startup",
+        "Diagnose electrical and controls faults and document root cause",
+        "Complete service reports and recommend corrective actions",
+        "Support emergency response and planned maintenance visits"
+      ],
+      "requirements": [
+        "3+ years of field electrical or controls experience",
+        "Ability to read drawings and troubleshoot without them when needed",
+        "Valid driver's license and willingness to travel locally",
+        "Strong customer communication and safe work habits"
+      ],
+      "niceToHave": [
+        "Journeyman electrician license",
+        "VFD and motor control expertise",
+        "OSHA 10 or 30 certification"
+      ],
+      "postedAt": "2026-08-30",
+      "active": true
+    },
+    {
+      "slug": "machinist",
+      "title": "Machinist",
+      "division": "Mechanical",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "level": "Experienced",
+      "summary": "Machine one-off and low-volume parts for control, energy, and industrial customers — including the parts nobody else wants to quote.",
+      "responsibilities": [
+        "Set up and operate manual and CNC mills and lathes",
+        "Hold tolerances on critical features and document inspection results",
+        "Machine backplates, cutouts, fixtures, and replacement components",
+        "Work from drawings, sketches, and physical samples",
+        "Maintain tooling and a clean, safe machine area"
+      ],
+      "requirements": [
+        "3+ years of machining experience",
+        "Ability to read engineering drawings and select tooling",
+        "Experience with aluminum, steel, and stainless",
+        "Reliable, detail-oriented, and safety-conscious"
+      ],
+      "niceToHave": [
+        "CNC programming experience",
+        "Fixture and tooling fabrication background",
+        "Reverse-engineering and inspection experience"
+      ],
+      "postedAt": "2026-08-12",
+      "active": true
+    },
+    {
+      "slug": "fabricator-welder",
+      "title": "Fabricator / Welder",
+      "division": "Fabrication",
+      "location": "Houston, TX",
+      "type": "Full-time",
+      "level": "Experienced",
+      "summary": "Fabricate sheet metal and structural assemblies — enclosures, skids, and frames — to drawing and finish specification.",
+      "responsibilities": [
+        "Cut, form, fit, and weld sheet metal and structural components",
+        "Read fabrication drawings and verify dimensions before welding",
+        "Maintain weld quality on carbon steel, stainless, and aluminum",
+        "Support assembly, finishing, and crating as needed",
+        "Keep equipment and work area safe and inspection-ready"
+      ],
+      "requirements": [
+        "3+ years of fabrication and welding experience",
+        "MIG and TIG capability on multiple materials",
+        "Ability to read drawings and work to tolerance",
+        "Commitment to safe work practices"
+      ],
+      "niceToHave": [
+        "Custom enclosure or skid fabrication experience",
+        "CNC press brake or laser operation experience",
+        "Certified welding credentials"
+      ],
+      "postedAt": "2026-07-29",
+      "active": true
+    }
+  ]
+}
