@@ -68,6 +68,7 @@ export const SITE_DEFAULTS = {
     titleLine1: 'Control panels',
     titleLine2: 'engineered to',
     emphasis: 'hold the line.',
+    rotating: ['hold the line.', 'hold the date.', 'hold the spec.'],
     subtitle: 'Vomtek designs, builds, tests, and commissions custom control panels, PCB assemblies, and wire harnesses for the plants, fleets, and facilities that cannot afford to stop.',
     primaryLabel: 'Start a project',
     primaryHref: '/quote',
